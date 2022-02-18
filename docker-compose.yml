@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./django
+    command: gunicorn core.wsgi
